@@ -10,7 +10,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(images/OIP.jpeg);
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(images/Weather-Desktop-Picture.jpg);
     background-size: cover;
     background-position:    center;
 }
@@ -85,6 +85,9 @@ transition: height .6s ease;
 
 .weather-box,
 .weather-details,
+.time-box,
+.sunrise-sunset.sunrise,
+.sunrise-sunset.sunset,
 .unable-to-find{
     overflow: hidden;
     visibility: hidden;
@@ -92,6 +95,8 @@ transition: height .6s ease;
 
 .weather-box.active,
 .weather-details.active,
+.time-box.active,
+.sunrise-sunset.active,
 .unable-to-find.active{
     visibility: visible;
 }
@@ -195,3 +200,17 @@ transition: height .6s ease;
    margin-top: 2px;
    color    : orange;
 }    
+
+/* CSS for sunrise and sunset */
+#sunrise-sunset {
+   position: relative;
+    margin-left: 20px 0;
+    font-size: 22px;
+    color: white;
+    
+}
+
+#sunrise-sunset p {
+    font-size: 18px;
+    font-weight: 500;
+}
