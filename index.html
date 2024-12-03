@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="weather.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="media.css" />
+</head>
+<body>
+    <div class="main">
+        <div class="search-box">
+            <i class='bx bxs-map'></i>
+            <input type="text" placeholder="enter your loccation">
+            <button class="bx bx-search"></button>
+        </div>
+        <div class="weather-box">
+            <div class="box">
+                
+                    <div class="weather">
+                        <img src="images/Copy of logo.png">
+                        <div class="temperature">0<span>°C</span></div>
+                        <div class="description">Broken Clouds</div>
+                    </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="weather-details">
+            <div class="humidity">
+                <i class='bx bx-water'></i>
+                <div class="text">
+                   
+                        <span>0%</span>
+                    </div>
+                    <p>humidity</p>
+                
+            </div>
+
+            <div class="wind">
+                <i class='bx bxl-tailwind-css'></i>
+                <div class="text">
+                   
+                        <span>0km/h</span>
+                    
+                    <p>wind speed</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Added Time Section -->
+        <div class="time-box">
+            <h2>Current Time</h2>
+            <p id="city-time">Loading...</p>
+
+            
+        </div>
+
+        
+        <!-- Added Sunrise and Sunset Times 
+        <div id="sunrise-sunset">
+            <p id="sunrise">Sunrise: </p>
+            <p id="sunset">Sunset: </p>
+        
+            </div>-->
+        <div class="unable-to-find">
+            <div class="box">
+                <img src="images/notFind.a4f05adfbaa76e3a9488984065e35657.png">
+                <p>Location not found Try again..!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="weather.js"></script>
+</body>
+</html>
